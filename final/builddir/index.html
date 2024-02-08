@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="rus" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to final_project&#39;s documentation! &#8212; final 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=861a6e44"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-final-project-s-documentation">
+<h1>Welcome to final_project's documentation!<a class="headerlink" href="#welcome-to-final-project-s-documentation" title="Link to this heading">¶</a></h1>
+<p>Sorting program
+This program provides the user with an interface to enter a sequence of numbers, sort them in a chosen order (ascending or descending), and display the sorted sequence as well as the time spent sorting.
+User Interface</p>
+<dl class="simple">
+<dt>Input fields</dt><dd><ul class="simple">
+<li><p>Enter numbers separated by commas: An input field in which the user enters a sequence of numbers separated by commas.</p></li>
+</ul>
+</dd>
+<dt>Drop-down list</dt><dd><ul class="simple">
+<li><p>Sorting method: Drop-down list that allows you to select the sort order: ascending or descending.</p></li>
+</ul>
+</dd>
+<dt>Button</dt><dd><ul class="simple">
+<li><p>Start: A button that, when clicked, starts sorting the entered sequence.</p></li>
+</ul>
+</dd>
+<dt>Sorting results</dt><dd><ul class="simple">
+<li><p>Result List: A field that displays the sorted sequence of numbers.</p></li>
+</ul>
+</dd>
+<dt>Sort Time</dt><dd><ul class="simple">
+<li><p>A label that displays the time spent sorting in seconds.</p></li>
+</ul>
+</dd>
+<dt>Entered Numbers</dt><dd><ul class="simple">
+<li><p>A label that displays the sequence of numbers entered by the user.</p></li>
+</ul>
+</dd>
+<dt>Functionality</dt><dd><ul class="simple">
+<li><p>Input Validation: When you enter numbers, the program checks them for correct format.</p></li>
+<li><p>Sort: After entering the numbers and selecting the sort method, the user can run the sort, which will display the sorted sequence and the time taken to sort.</p></li>
+<li><p>Re-sorting or exiting the program: After each sort, the program offers the user a choice: repeat the sort or exit. When you select repeat sort, the input field is automatically cleared.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="import-and-functions">
+<h1>Import and functions<a class="headerlink" href="#import-and-functions" title="Link to this heading">¶</a></h1>
+<dl class="simple">
+<dt>Importing libraries and modules</dt><dd><ul class="simple">
+<li><p><cite>import tkinter as tk</cite>: Imports the <cite>tkinter</cite> library with the <cite>tk</cite> alias.</p></li>
+<li><p><cite>from tkinter import ttk</cite>: Import the <cite>ttk</cite> module from the <cite>tkinter</cite> library.</p></li>
+<li><p><cite>import time</cite>: Import the <cite>time</cite> module to work with time.</p></li>
+<li><p><cite>import re</cite>: I mport the <cite>re</cite> module for working with regular expressions.</p></li>
+<li><p><cite>import tkinter.messagebox as msg</cite>: Imports the <cite>messagebox</cite> module from the <cite>tkinter</cite> library with the <cite>msg</cite> alias.</p></li>
+</ul>
+</dd>
+<dt>Functions</dt><dd><ul class="simple">
+<li><p><cite>is_valid_input(input_str)</cite>: Function for validating input. Checks that the input contains only numbers separated by commas.</p></li>
+<li><p><cite>validate_input(new_value)</cite>: Function for validating input. Checks that the input matches the specified format.</p></li>
+<li><p><cite>sort_sequence()</cite>: A function that sorts a sequence of numbers entered by the user.</p></li>
+</ul>
+</dd>
+<dt>Creating a GUI</dt><dd><ul class="simple">
+<li><p>Creating the main application window with the title &quot;Sorting program&quot; and size 1000x1000.</p></li>
+<li><p>Setting a standard font for all interface elements.</p></li>
+</ul>
+</dd>
+<dt>Interface elements</dt><dd><ul class="simple">
+<li><p><cite>note_label</cite>: Label for the input instruction.</p></li>
+<li><p><cite>entry</cite>: Entry field for a sequence of numbers.</p></li>
+<li><p><cite>sort_combobox</cite>: Drop-down list for selecting the sort type.</p></li>
+<li><p><cite>start_button</cite>: Button to start sorting.</p></li>
+<li><p><cite>result_label</cite>: Label for displaying the result list.</p></li>
+<li><p><cite>result_text</cite>: Multiline text field to display the sorted sequence.</p></li>
+<li><p><cite>time_label</cite>: Label to display the sorting time.</p></li>
+<li><p><cite>original_sequence_label</cite>: Label to display the user-entered sequence.</p></li>
+</ul>
+</dd>
+<dt>Main application loop</dt><dd><ul class="simple">
+<li><p>Running the main application loop <cite>root.mainloop()</cite> to display the interface and handle events.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">final</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, serge.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
